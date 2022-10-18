@@ -994,4 +994,11 @@ public class PostDAOImpl implements PostDAO{
 
     return list;
   }
+
+  @Override
+  public void firstGood(String email, String postId) {
+    StringBuffer sql = new StringBuffer();
+    sql.append("insert into good (good_id, post_id, email, islike) ");
+    sql.append("values(good_good_id_seq.nextval, ?, ?, ? ");
+  }
 }

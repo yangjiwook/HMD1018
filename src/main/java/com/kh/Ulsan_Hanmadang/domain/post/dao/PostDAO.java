@@ -218,4 +218,7 @@ public interface PostDAO {
    * @return 이미지 목록
    */
   List<PromotionHome> getDisplyProms(String date);
+
+
+  void firstGood(String email, String postId);
 }

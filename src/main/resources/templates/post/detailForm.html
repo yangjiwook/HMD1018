@@ -113,11 +113,14 @@
               <!--좋아요/공유-->
               <div class="view_like">
                 <div class="content_view_like">
-                  <a href=""><i class="fa-regular fa-heart fa-2x"></i></a>
+<!--                  <button type="button" class="btn_image"><i class="fa-regular fa-heart fa-2x"></i></button>-->
+                  <button th:if="${s_email} == *{email}" type="button" class="btn_image"><i class="fa-solid fa-heart"></i></button>
+                  <button type="button" class="btn_image"><i class="fa-regular fa-heart"></i></button>
                   <!--좋아요 누르면 꽉찬하트-->
                   <!-- <a href=""><i class="fa-solid fa-heart fa-2x"></i></a> -->
                   <!--공유-->
-                  <a href=""><i class="fa-solid fa-share-nodes fa-2x"></i></a>
+                  <button type="button" class="btn_image"><i class="fa-solid fa-share-nodes fa-2x"></i></button>
+
                 </div>
               </div>
               <!--댓글-->
